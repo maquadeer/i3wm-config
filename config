@@ -49,7 +49,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec /home/ashu/.local/bin/kitty
+bindsym $mod+Return exec /home/ash/.local/bin/kitty
 
 
 # kill focused window
@@ -206,5 +206,5 @@ bindsym F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym F10 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-exec --no-startup-id /usr/lib/lxpolkit/lxpolkit
-
+# DELL INPUT (TOUCHPAD)
+exec --no-startup-id xinput set-prop "DELL0A11:00 06CB:CDD5 Touchpad" "libinput Tapping Enabled" 1
